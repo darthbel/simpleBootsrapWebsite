@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Felipe's files -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <script src="js/script.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <title>No Name</title>
+  </head>
+  <body id="body" class="container-fluid">
+    <header id="mainHeader" class="container p-0">
+      <section id="logoAndSearch" class="container row m-0">
+            <!-- Logo of the webpage, which once clicked will redirect user to site home page -->
+            <a href="index.html" class="col-sm align-self-center">
+              <img src="img/logo.png" id="logo">
+            </a>
+            <!-- Search bar, which is not functional yet -->
+            <form class="navbar-form align-self-center" role="search">
+              <div id="searchBar" class="col-md input-group add-on">
+                <input type="text" class="form-control" name="Search" placeholder="Search...">
+                <button class="btn btn-default" type="submit"><img src="img/search.svg" alt="Search Icon"></button>
+              </div>
+            </form>
+
+      </section>
+      <!-- The main menu -->
+      <nav id="mainMenu" class="nav navbar bg-dark">
+        <ul class="nav">
+          <li class="nav-item"><a href="index.html" class="nav-link" title="Home">Home</a></li>
+          <li class="nav-item"><a href="giftcard.html" class="nav-link" title="Gift Card Generator">Gift Card Generator</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link" title="Help">Help</a></li>
+        </ul>
+      </nav>
+
+
+    </header>
+
+    <main id="mainContent" class="container pt-3">
+
+      <section id="cardFormSection" class="container pt-3 row ml-1">
+        <h1 class="col-12">Gift Cards Generator</h1>
+        <form class="cardForm col-sm">
+          <ul class="inputCardForm list-group list-unstyled ml-3 pb-3">
+            <li>
+              <label>Name of Recepient:</label>
+              <input type="name" name="cardName" id="cardName" maxlength="18">
+            </li>
+            <li>
+              <label>Message to Recepient:</label>
+              <textarea type="message" name="cardMessage" id="cardMessage" maxlength="60"></textarea>
+            </li>
+            <fieldset>
+              <label>Select the card's background option:</label>
+              <li>
+                <input type="radio" id="cardBG1" name="cardBG" value="1">Option 1</input>
+              </li>
+              <li>
+                <input type="radio" id="cardBG2" name="cardBG" value="2">Option 2</input>
+              </li>
+              <li>
+                <input type="radio" id="cardBG3" name="cardBG" value="3">Option 3</input>
+              </li>
+            </fieldset>
+          </ul>
+          <button type="button" class="mb-3" id="createCardButton" onclick="createCard()">Create Gift Card</button>
+        </form>
+        <section id="createdCard" class="container mt-3 col-md-4">
+            <!-- Here is where the code for the created card is going to be inserted -->
+            <img src="" class="img-fluid" id="createdBgImgCard">
+            <label id="createdCardName"></label>
+            <p id="createdCardMessage"><p>
+        </section>
+      </section> 
+    </main>
+
+    <!-- Footer section, containing the copyrights -->
+    <footer class="container text-center pt-4">
+      <p><span>&copy</span>2017 Noname Team All rights reserved</p>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>
