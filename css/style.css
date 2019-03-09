@@ -13,15 +13,11 @@
 	background-color: #ABACD0;
 }
 
-#logo{
-
-}
-
 #mainMenu{
 	background-color: #1E2830;
 	border-top: 2px solid #bf2027;
 	border-bottom: 2px solid #bf2027;
-	max-height: 40px;
+
 }
 
 #mainMenu a{
